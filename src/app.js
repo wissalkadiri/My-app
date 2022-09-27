@@ -25,7 +25,7 @@ let days = [
     let currenthumidity= Math.round(response.data.main.humidity);
     humidity.innerHTML=`${currenthumidity}`
     let h2 = document.querySelector("h2");
-    let description= response.data.weather[1];
+    let description= response.data.weather[0].main;
     h2.innerHTML=`${description}`
   }
   function showCity(event){
